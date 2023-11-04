@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Personal Portfolio Website - Pheerapon </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/52d693d908.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Enducations</a></li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Ativities</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <div class="header-textB">
+                <h1>Hello I'm P</h1>
+                <p>This is the place</p>
+                <p>where information about me is collected.</p>
+            </div>
+            <div class="img-box">
+                <img src="image/_MG_0816-transformed.png" width="500px" class="Pheerapon">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/_MG_0260.JPG" width="250px">
+            </div>
+            <div class="about-col-2">
+                <h1 class ="sub-title">About Me</h1>
+                <p>Hello, my name is Pheerapon Sumathon. 
+                    I am currently in my 6th year at Princess Chulabhorn Science High School in Chiang Rai. 
+                    I have been passionate about computers for a long time. I started using a computer when I was 6 years old because my older sibling often invited me to play games. 
+                    This exposure led me to learn and develop a strong connection with computers. I enjoy working with them and can handle tasks well.
+
+                    As for why I chose to study at Bangmod, it's because they focus more on practical work, 
+                    teach fundamentals, and emphasize projects. Many of my older classmates recommended Bangmod 
+                    for computer engineering, saying it's an area where we can grow by leaps and bounds.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('talent')">Talent</p>
+                        <p class="tab-links" onclick="opentab('enducation')">Enducation</p>
+                    </div>
+                    <div class="tab-content active-tab" id="talent">
+                        <ul>
+                            <li><span>Programing languages?</span><br>HTML, CSS, Python, C program</li>
+                            <li><span>Software Skills?</span><br>Adobe Photoshop, Adobe Premium Por, Unity, Fusion 360</li>
+                            <li><span>Sport?</span><br>Foot ball, Volley  Ball, Basket Ball, Running</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="enducation">
+                        <ul>
+                            <li><span>Primary School</span><br>Banpongsanook School.</li>
+                            <li><span>Junior high school</span><br>Lampang Kanlayanee School.</li>
+                            <li><span>Senior High School</span><br>Princess Chulabhorn Science High School Chiang Rai.</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------experience-------------------->
+<div id="experience">
+    <div class="container">
+        <h1 class ="sub-title">Experience</h1>
+        <div class="experience-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web devalopment</h2>
+                <p>Gamer To Coder</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Game develop</h2>
+                <p>Zark Virus</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-flask"></i>
+                <h2>Science Projects</h2>
+                <p>a comparative study of efficiency in lac's color fixation in shallot's flower cell through mordant process</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------contact----------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>Pheerapon.suma@mail.kmutt.ac.th</p>
+                <p><i class="fa-solid fa-phone"></i>+66 991926722</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100018215144747"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ponlaph/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/xpxx7"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://discord.gg/cXT5c3qe"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="your name" required>
+                    <input type="email" name="email" placeholder="your email" required>
+                    <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>King Mongkut's University of Technology Thonburi.</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</body>
+</html>
